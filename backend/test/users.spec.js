@@ -70,9 +70,9 @@ describe("Post users/auth", () => {
       expect(res.status).toBe(200);
     });
 
-    test('Check undefined: status 400', async () => {
+    test('Check undefined: status 402', async () => {
       const res = await logIn(undefined, "12134qwe1r");
-      expect(res.status).toBe(400);
+      expect(res.status).toBe(402);
     });
 
     test('Check mismatched userId & password: status 401', async () => {

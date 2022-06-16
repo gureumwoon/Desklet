@@ -7,15 +7,17 @@ DB_CONNECTION();
 //회원가입
 describe("auth-middleware check", () => {
 
-  const signup = (email, nickName, password) => {
-    return request(app)
-      .post("/users/signup")
+  const auth = (email, nickName, password) => {
+    return request(authMiddleware)
       .send({
         userId: email,
         nickName: nickName,
         password: password
       });
   }
+
+  const correct_key = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ0ZXN0MTEyM0BlbWFpbC5jb20iLCJpYXQiOjE2NTUzNjMyNDF9.U71lla_5TIwiTu3LJ69XB-Nc6qZ9h07ybVBTgLdfYdM";
+  const wrong_key = "Bearer "
 
   // describe("given a userId, password and nickName", () => {
 

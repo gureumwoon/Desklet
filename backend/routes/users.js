@@ -3,11 +3,11 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const bcrpyt = require("bcrypt");
 
-const { User, postUsersSchema } = require("../schemas/user");
+const { User, postUsersSchema, postLoginSchema } = require("../schemas/user");
 
 router.post("/auth", async (req, res) => {
   try {
-    var { userId, password } = req.body;
+    var { userId, password } = await postLoginSchema.validateAsync(req.body);
   } catch {
     return res.status(402).send({
       errorMessage: '입력조건이 맞지 않습니다.',
