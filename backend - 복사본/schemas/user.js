@@ -24,13 +24,7 @@ const postUsersSchema = Joi.object({
   password: Joi.string().pattern(new RegExp(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/)).required(),
 });
 
-const postLoginSchema = Joi.object({
-  userId: Joi.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }).required(),
-  password: Joi.string().pattern(new RegExp(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/)).required(),
-});
-
 module.exports = {
   User: mongoose.model("User", UserSchema),
-  postUsersSchema,
-  postLoginSchema
+  postUsersSchema
 }

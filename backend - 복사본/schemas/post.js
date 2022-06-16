@@ -26,6 +26,7 @@ const PostSchema = mongoose.Schema({
     postId: {
         type: Number,
     }
+
 })
 
 // PostSchema.virtual("postId").get(function () {
