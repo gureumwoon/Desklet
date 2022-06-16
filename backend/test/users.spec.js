@@ -65,7 +65,7 @@ describe("Post users/auth", () => {
 
   describe("Given a userId and password", () => {
 
-    test('duplicated *userId*: status 200', async () => {
+    test('login : status 200', async () => {
       const res = await logIn("test1123@email.com", "1234qwer");
       expect(res.status).toBe(200);
     });
@@ -80,6 +80,5 @@ describe("Post users/auth", () => {
       expect(res.status).toBe(401);
     });
   });
-
 
 });
