@@ -7,7 +7,7 @@ import { putCommentDB, deleteCommentDB } from "../redux/modules/comment";
 import { SmallBtn, MainBtn } from "../elements/Btn";
 import { Input } from "../elements/Input";
 
-const Comment = ({ commentObj }) => {
+export const Comment = ({ commentObj }) => {
   const dispatch = useDispatch();
   const commentRef = useRef(commentObj.content);
   const userId = useSelector((state) => state.user.user.userId);
