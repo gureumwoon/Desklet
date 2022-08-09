@@ -43,4 +43,25 @@
 #### ✅ **게시글 등록, 수정, 삭제 기능**
 #### ✅ **댓글 등록, 수정, 삭제 기능**
 
+<br>
 
+## 📌 팀원소개
+### 백엔드
+<table width = "200" style="text-align:center;" >
+  <tr>
+    <th height = "40"> Name</th>
+    <th height = "40"> Github</th>
+  </tr>
+  <tr>
+    <td> 김형근 </td>
+    <td> https://github.com/fnvkd5316 </td>
+  </tr>
+  <tr>
+    <td> 김주혁 </td>
+    <td> https://github.com/playhuck </td>
+  </tr>
+  <tr>
+    <td> 유승재 </td>
+    <td> https://github.com/jerryjudymary </td>
+  </tr>
+</table>
