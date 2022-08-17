@@ -48,22 +48,9 @@
 
 ## 📌 팀원소개
 ### 백엔드
-<table width = "200" style="text-align:center;" >
-  <tr>
-    <th height = "40"> Name</th>
-    <th height = "40"> Github</th>
-  </tr>
-  <tr>
-    <td> 김형근 </td>
-    <td> https://github.com/fnvkd5316 </td>
-  </tr>
-  <tr>
-    <td> 김주혁 </td>
-    <td> https://github.com/playhuck </td>
-  </tr>
-  <tr>
-    <td> 유승재 </td>
-    <td> https://github.com/jerryjudymary </td>
-  </tr>
-</table>
+|Name|Github|맡은 역할|
+|:---:|:---:|:---:|
+| 김형근 | https://github.com/fnvkd5316 | 로그인, 회원가입 페이지, 해당페이지 test code작성 |
+| 김주혁 | https://github.com/playhuck | 게시글 페이지, 이미지 저장 |
+| 유승재 | https://github.com/jerryjudymary | 메인페이지, 댓글기능, 해당페이지 test code작성 |
 
